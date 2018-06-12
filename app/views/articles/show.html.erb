@@ -1,0 +1,15 @@
+
+<h1> <%= @article.title %> </h1>
+
+<p> <%= @article.content %> </p>
+
+<div class="buttons">
+<p class="btn-treehouse">
+  <%= link_to "Edit", edit_article_path %>
+</p>
+<p class="btn-medium">
+  <%= link_to "Delete",article_delete_path, method: :delete %>
+</p>
+</div>
+
+<%= link_to "Back to articles", articles_path%>

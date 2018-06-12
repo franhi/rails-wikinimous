@@ -1,0 +1,8 @@
+<ul>
+  <li>
+    <% @articles.each do |article| %>
+    <h3 class="head"> <%= link_to article.title, article_path(article) %> </h3>
+    <p class="p">  <%= article.content[0..100] %> </p>
+    <% end %>
+  </li>
+</ul>
